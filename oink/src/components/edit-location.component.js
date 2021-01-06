@@ -109,7 +109,7 @@ export default class EditLocation extends Component {
     axios.post('http://localhost:5000/locations/update/'+this.props.match.params.id, location)
       .then(res => console.log(res.data));
     
-    window.location = '/';
+    window.location = '/locations';
   }
 
   render() {
